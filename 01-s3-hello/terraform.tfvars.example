@@ -1,0 +1,4 @@
+# Copy to terraform.tfvars and edit
+bucket_name = "replace-with-a-unique-name-12345"
+region      = "us-east-1"
+# aws_profile = "default"
