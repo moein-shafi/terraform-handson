@@ -1,0 +1,11 @@
+# Copy this to backend.tf and fill in your details to use remote state.
+terraform {
+  backend "s3" {
+    bucket         = "REPLACE-me-state-bucket"
+    key            = "REPLACE-me/path/to/state.tfstate"
+    region         = "us-east-1"
+    profile        = "default"
+    dynamodb_table = "REPLACE-me-tf-locks"
+    encrypt        = true
+  }
+}
